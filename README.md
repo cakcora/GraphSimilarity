@@ -4,7 +4,7 @@ Social similarity.java
  -> Implements the social similarity algorithm from 'Network and profile based measures for user similarities on social networks' by Akcora et al.
  
  Use Jung dependencies in Maven
- 
+ <code>
    <dependency>
 			<groupId>net.sf.jung</groupId>
 			<artifactId>jung-api</artifactId>
@@ -20,3 +20,4 @@ Social similarity.java
 			<artifactId>commons-io</artifactId>
 			<version>1.3.2</version>
 	 </dependency>
+</code>
