@@ -117,7 +117,8 @@ public class Similarity {
 				+ graphNew.getEdgeCount() + " edges in its friendship graph");
 
 		// computations ended. Add back the removed edge between vertices.
-		graph.addEdge(removed, v1, v2);
+		if(!removed.toString().isEmpty())
+			graph.addEdge(removed, v1, v2);
 		if(mutualFrEdgeCOunt==frEdgeCount) return 0d;
 		return Math.log(frEdgeCount) / Math.log(2 * mutualFrEdgeCOunt);
 
